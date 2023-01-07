@@ -18,6 +18,12 @@ const NavBar: React.FC<NavBarProps> = (props) => {
                 <li>
                     <a href="/mail-ai">Mail-AI</a>
                 </li>
+                <li>
+                    <a href="/text-ai">Text-AI</a>
+                </li>
+                <li>
+                    <a href="/image-ai">Image-AI</a>
+                </li>
             </ul>
         </nav>
     );

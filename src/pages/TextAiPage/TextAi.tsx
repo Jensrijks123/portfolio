@@ -1,4 +1,3 @@
-// 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
 import * as React from 'react';
 
 const API_KEY = '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';
@@ -24,7 +23,7 @@ const TextConverter: React.FC<TextConverterProps> = () => {
             const openai = new OpenAIApi(configuration);
             const response = await openai.createCompletion({
                 model: 'text-davinci-003',
-                prompt: `Kan je deze e-mail netter en meer professioneel maken in correct grammaticaal nederlands en aanheffing: "${inputText}"?`,
+                prompt: `"${inputText}"`,
                 temperature: 0.5,
                 max_tokens: 1000
             });
@@ -41,7 +40,7 @@ const TextConverter: React.FC<TextConverterProps> = () => {
                 const openai = new OpenAIApi(configuration);
                 const response = await openai.createCompletion({
                     model: 'text-ada-001',
-                    prompt: `Kan je deze e-mail netter en meer professioneel maken in correct grammaticaal nederlands en aanheffing: "${inputText}"?`,
+                    prompt: `"${inputText}"`,
                     temperature: 0.5,
                     max_tokens: 1000
                 });
@@ -68,7 +67,7 @@ const TextConverter: React.FC<TextConverterProps> = () => {
                     <p style={{ whiteSpace: 'pre-line' }}>{outputText}</p>
                 </div>
             ) : (
-                <p>No Text Yet!!</p>
+                <p>No text yet</p>
             )}
         </div>
     );

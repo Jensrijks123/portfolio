@@ -1,13 +1,11 @@
-import { FunctionComponent } from 'react';
-import { Outlet } from 'react-router-dom';
+import NavBar from '../NavBar/NavBar';
 
-interface LayoutProps {}
-
-const Layout: FunctionComponent<LayoutProps> = () => {
+const Layout = ({ children }: any) => {
     return (
-        <div style={{ border: 2, padding: 2, borderColor: 'black', borderStyle: 'dashed', margin: 5, width: 500, height: 500 }}>
-            <Outlet />
-        </div>
+        <>
+            <NavBar title="Portfolio" />
+            <main>{children}</main>
+        </>
     );
 };
 

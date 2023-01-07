@@ -36,7 +36,6 @@ const HomePage: FunctionComponent<HomePageProps> = () => {
 
     return (
         <>
-            <NavBar title="Portfolio" />
             <div style={{ minHeight: '100vh', padding: '4rem' }}>
                 <section style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '0 auto' }} className="section-80">
                     <div>

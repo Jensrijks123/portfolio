@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 interface NavBarProps {
     title: string;
@@ -10,19 +11,19 @@ const NavBar: React.FC<NavBarProps> = (props) => {
             <h1>{props.title}</h1>
             <ul>
                 <li>
-                    <a href="/">Home</a>
+                    <NavLink to="/">Home</NavLink>
                 </li>
                 <li>
-                    <a href="/about">About</a>
+                    <NavLink to="/about">About</NavLink>
                 </li>
                 <li>
-                    <a href="/mail-ai">Mail-AI</a>
+                    <NavLink to="/mail-ai">Mail-AI</NavLink>
                 </li>
                 <li>
-                    <a href="/text-ai">Text-AI</a>
+                    <NavLink to="/text-ai">Text-AI</NavLink>
                 </li>
                 <li>
-                    <a href="/image-ai">Image-AI</a>
+                    <NavLink to="image-ai">Image-AI</NavLink>
                 </li>
             </ul>
         </nav>

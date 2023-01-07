@@ -12,27 +12,27 @@ interface ApplicationProps {}
 
 const Routing: FunctionComponent<ApplicationProps> = () => {
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="about">
-                    <Route index element={<AboutPage />} />
-                    <Route path=":number" element={<AboutPage />} />
-                </Route>
-                <Route path="mail-ai" element={<MailAi />} />
-                <Route path="text-ai" element={<TextAi />} />
-                <Route path="image-ai" element={<ImageAi />} />
-                <Route path="*" element={<NotFound />} />
-            </Routes>
-        </BrowserRouter>
+        <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="about">
+                <Route index element={<AboutPage />} />
+                <Route path=":number" element={<AboutPage />} />
+            </Route>
+            <Route path="mail-ai" element={<MailAi />} />
+            <Route path="text-ai" element={<TextAi />} />
+            <Route path="image-ai" element={<ImageAi />} />
+            <Route path="*" element={<NotFound />} />
+        </Routes>
     );
 };
 
 const Application: FunctionComponent<ApplicationProps> = () => {
     return (
-        <Layout>
-            <Routing />
-        </Layout>
+        <BrowserRouter>
+            <Layout>
+                <Routing />
+            </Layout>
+        </BrowserRouter>
     );
 };
 

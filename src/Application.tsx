@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import AboutPage from './pages/AboutPage/AboutPage';
 import HomePage from './pages/HomePage/HomePage';
+import MailAI from './pages/MailAiPage/MailAI';
 
 interface ApplicationProps {}
 
@@ -19,6 +20,7 @@ const Application: FunctionComponent<ApplicationProps> = () => {
                     <Route index element={<AboutPage />} />
                     <Route path=":number" element={<AboutPage />} />
                 </Route>
+                <Route path="mail-ai" element={<MailAI />} />
             </Routes>
         </BrowserRouter>
     );

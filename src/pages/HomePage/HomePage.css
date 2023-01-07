@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.section-80 h1 {
+    margin-bottom: 17rem;
+    opacity: 0;
+}
+
+.section-80 p {
+    opacity: 0;
+}
+
+#JR-1 {
+    stroke-dasharray: 1450;
+    stroke-dashoffset: 1450;
+    animation: draw 4s linear forwards;
+    color: red;
+    animation-delay: 0s;
+}
+
+#JR-2 {
+    stroke-dasharray: 1450;
+    stroke-dashoffset: 1450;
+    animation: draw 4s linear forwards;
+    color: red;
+    animation-delay: 2s;
+}
+
+#JR-3 {
+    stroke-dasharray: 1450;
+    stroke-dashoffset: 1450;
+    animation: draw 4s linear forwards;
+    color: red;
+    animation-delay: 4s;
+}
+
+#JR-4 {
+    stroke-dasharray: 1450;
+    stroke-dashoffset: 1450;
+    animation: draw 4s linear forwards;
+    color: red;
+    animation-delay: 6s;
+}
+
+.JR-SVG {
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 1000;
+}
+
+.svg-container {
+    height: 2000px;
+}
+
+svg {
+    z-index: -1;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100% !important;
+    height: auto;
+    width: 1000px;
+    height: 1000px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    color: white;
+}
+
+nav h1 {
+    flex-grow: 1;
+    margin: 0;
+    padding: 0.5em;
+    font-size: 1.5em;
+    font-weight: normal;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0.5em;
+}
+
+nav a:hover,
+nav a:active {
+    background-color: #444;
+}

@@ -1,7 +1,6 @@
-// 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
 import * as React from 'react';
 
-const API_KEY = 'sk-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';
+const API_KEY = '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';
 
 interface TextConverterProps {}
 

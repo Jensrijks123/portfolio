@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import AboutPage from './pages/AboutPage/AboutPage';
 import HomePage from './pages/HomePage/HomePage';
 import NotFound from './pages/NotFoundPage/NotFound';
-import MailAi from './pages/MailAiPage/MailAi';
+import MailAi from './pages/MailConverterAiPage/MailConverterAi';
 import TextAi from './pages/TextAiPage/TextAi';
 import ImageAi from './pages/ImageAiPage/ImageAi';
 import Layout from './components/Layout/Layout';

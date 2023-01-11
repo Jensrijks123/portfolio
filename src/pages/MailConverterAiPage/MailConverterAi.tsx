@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-const API_KEY = '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';
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 interface TextConverterProps {}
 
